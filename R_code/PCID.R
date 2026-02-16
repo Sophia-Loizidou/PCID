@@ -16,28 +16,6 @@ cusum_circle <- function(data){
   return(lr_test)
 }
 
-cusum_circle_alternative <- function(data){
-  if (!(is.numeric(data))){
-    stop("The input in `data' should be a numeric vector containing the data
-         for which the CUSUM function will be calculated.")
-  }
-  n <- length(data)
-  
-  # mean under H0
-  mu0 <- as.numeric(atan2(sum(sin(data)), sum(cos(data))))
-  
-  lr_test <- rep(NA, n-1)
-  
-  for(b in 1:(n - 1)){
-    # mean under H1
-    mu1 <- as.numeric(atan2(sum(sin(data[1:b])), sum(cos(data[1:b]))))
-    mu2 <- as.numeric(atan2(sum(sin(data[(b+1):n])), sum(cos(data[(b+1):n]))))
-    
-    lr_test[b] <- 2*(sum(cos(data[1:b] - mu1)) + sum(cos(data[(b+1):n] - mu2)) - sum(cos(data - mu0)))
-  }
-  return(lr_test)
-}
-
 s_e_points <- function(r, l, s, e) {
   r <- sort(r)
   l <- sort(l, decreasing = TRUE)
