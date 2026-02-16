@@ -455,6 +455,10 @@ PCID <- function(x, FDR = 0.01, s = 1, e = length(x), points = 5, win_length = 5
 
 ## Examples
 # library(circular)
-# set.seed(1)
-# x <- rvonmises(800, circular(0), 2) + c(rep(0, 300), rep(2, 300), rep(0, 200))
-# cpt <- PCID(x, FDR = 0.01, verbose = F)
+# set.seed(2)
+# x <- rvonmises(200, circular(0), 4) + c(rep(0, 100), rep(2, 100))
+# cpt <- PCID(x, FDR = 0.01)
+# 
+# cpt <- PCID(x, FDR = 0.01, verbose = T, override_default = T)
+# 
+# cpt <- PCID(x, alpha = 0.002, override_default = T)
