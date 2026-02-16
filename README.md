@@ -28,5 +28,5 @@ The user can also manually choose the significance level used for the permutatio
 In this case 'override_default = T' is required.
 
 ```r
-cpt <- cpt <- PCID(x, alpha = 0.002, override_default = T)
+cpt <- PCID(x, alpha = 0.002, override_default = T)
 ```
