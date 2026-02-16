@@ -15,8 +15,8 @@ x <- rvonmises(200, circular(0), 4) + c(rep(0, 100), rep(2, 100))
 cpt <- PCID(x, FDR = 0.01)
 ```
 
-The algorithm chooses the appropriate values of $\alpha$ (significance level of permutation tests) and $B$ (maximum number of permutations performed), according to the FDR chosen by the user.
-By default, the minimum value of $\alpha$ is $\alpha = 0.0001$ and the maximum value of $B$ is $B = 1000$.
+The algorithm chooses the appropriate values of $\alpha$ (significance level of permutation tests) and $B$ (maximum number of permutations performed), according to the Type I error of the algorithm (denoted by FDR) chosen by the user.
+By default, the minimum value of $\alpha$ is $\alpha = 0.001$ and the maximum value of $B$ is $B = 1000$.
 The user can override this by setting 'override_default = T'.
 This can slow down the computation.
 
