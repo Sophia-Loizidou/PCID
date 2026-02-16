@@ -1,10 +1,10 @@
 # PCID
-Permutation-based Circular IsolateDetect (PCID) is a change-point detection algorithm for multiple change-points in the mean of circular data, as proposed in Loizidou, Anastasiou, Ley (2026+).
-The repository contains the following files
+Permutation-based Circular IsolateDetect (PCID) is a change-point detection algorithm for multiple change-points in the mean of circular data, as proposed in Loizidou, Anastasiou and Ley (2026+).
+The repository contains the following files:
 
 * PCID.R: functions required to use the PCID algorithm 
-* Simulations_code.R: functions required to run simulations
-* Simulations.R: code to run the simulations as Section 5.2 of the paper
+* Simulations_code.R: functions required to run simulations (requires PCID.R)
+* Simulations.R: signals and code to run the simulations as in Section 5.2 of the paper (requires Simulations_code.R)
 
 ## Using PCID
 Example on how to use the method:

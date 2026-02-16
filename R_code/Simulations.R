@@ -34,11 +34,6 @@ S5_sim_kappa2_FDR01 <- sim.study(S5, true.cpt = c(50, 100), kappa = 2, seed = se
 S5_sim_kappa1_FDR05 <- sim.study(S5, true.cpt = c(50, 100), kappa = 1, seed = seed.temp, m = 100, FDR = 0.05)
 S5_sim_kappa1_FDR01 <- sim.study(S5, true.cpt = c(50, 100), kappa = 1, seed = seed.temp, m = 100, FDR = 0.01)
 
-S5_sim_kappa8_FDR01_B10000 <- sim.study(S5, true.cpt = c(50, 100), kappa = 8, seed = seed.temp, m = 100, FDR = 0.01, override_default = T)
-S5_sim_kappa4_FDR01_B10000 <- sim.study(S5, true.cpt = c(50, 100), kappa = 4, seed = seed.temp, m = 100, FDR = 0.01, override_default = T)
-S5_sim_kappa2_FDR01_B10000 <- sim.study(S5, true.cpt = c(50, 100), kappa = 2, seed = seed.temp, m = 100, FDR = 0.01, override_default = T)
-S5_sim_kappa1_FDR01_B10000 <- sim.study(S5, true.cpt = c(50, 100), kappa = 1, seed = seed.temp, m = 100, FDR = 0.01, override_default = T)
-
 
 ########################### S6 ###########################
 
@@ -51,11 +46,6 @@ S6_sim_kappa2_FDR05 <- sim.study(S6, true.cpt = seq(30, 180, by = 30), kappa = 2
 S6_sim_kappa2_FDR01 <- sim.study(S6, true.cpt = seq(30, 180, by = 30), kappa = 2, seed = seed.temp, m = 100, FDR = 0.01)
 S6_sim_kappa1_FDR05 <- sim.study(S6, true.cpt = seq(30, 180, by = 30), kappa = 1, seed = seed.temp, m = 100, FDR = 0.05)
 S6_sim_kappa1_FDR01 <- sim.study(S6, true.cpt = seq(30, 180, by = 30), kappa = 1, seed = seed.temp, m = 100, FDR = 0.01)
-
-S6_sim_kappa8_FDR01_B10000 <- sim.study(S6, true.cpt = seq(30, 180, by = 30), kappa = 8, seed = seed.temp, m = 100, FDR = 0.01, override_default = T)
-S6_sim_kappa4_FDR01_B10000 <- sim.study(S6, true.cpt = seq(30, 180, by = 30), kappa = 4, seed = seed.temp, m = 100, FDR = 0.01, override_default = T)
-S6_sim_kappa2_FDR01_B10000 <- sim.study(S6, true.cpt = seq(30, 180, by = 30), kappa = 2, seed = seed.temp, m = 100, FDR = 0.01, override_default = T)
-S6_sim_kappa1_FDR01_B10000 <- sim.study(S6, true.cpt = seq(30, 180, by = 30), kappa = 1, seed = seed.temp, m = 100, FDR = 0.01, override_default = T)
 
 
 ########################### S7 ###########################
