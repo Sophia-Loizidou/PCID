@@ -193,11 +193,13 @@ PCID_win <- function(x, s = 1, e = length(x), points = 5, win_length = 500, k_l 
     for(i in 1:(num_intervals-1)){
       if(length(r[[i]]) == 0){
         left_point <- start_points[i] + floor(win_length/2) - 1
+        ## same as end_points[i] - floor(win_length/2)
       } else {
         left_point <- max(start_points[i] + floor(win_length/2) - 1, r[[i]][length(r[[i]])]+1)
       }
       if(length(r[[i+1]]) == 0){
         right_point <- min(start_points[i+1] + floor(win_length/2) - 1, end_points[i+1])
+        ## same as end_points[i] + floor(win_length/2)
       } else {
         right_point <- min(min(start_points[i+1] + floor(win_length/2) - 1, end_points[i+1]), r[[i+1]][1])
       }
